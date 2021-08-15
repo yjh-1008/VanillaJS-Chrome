@@ -8,9 +8,21 @@
     <title>Hello From HTML</title>
 </head>
 <body>
-    <div class="hello">asd
-        <h1 class="sexy_font clicked">>Grap ME!</h1>
-    </div>
-    <script src="app.js"></script>
+    <form class ="hidden" id="login-form">
+        <div id="login-form">
+            <input 
+            required 
+            maxlength="15"
+            type="text"
+            placeholder="What is yout name?"/>
+            <input type="submit" value="Log in"/>
+            <a href="https://nomadcoders.co">Go to courses</a>
+        </div>
+    
+    </form>
+    <h1 id="greeting" class="hidden">00:00</h1>
+    <h2 id="clock"> </h2>
+    <script src="js/app.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 </html>
