@@ -11,8 +11,10 @@ function saveToDos(){
 function deleteToDo(e) {
     //console.log("lalala")
     const li = e.target.parentElement;
-    //console.dir(li);
     li.remove();
+    toDos=toDos.filter(toDo=> toDo.id!==parseInt(li.id));
+    saveToDos();
+    
 }
 
 function paintToDo(newToDo){
@@ -54,4 +56,5 @@ if(savedToDos!=null){
     toDos=parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+
 
